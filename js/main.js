@@ -17,6 +17,18 @@ createApp({
         {
             text: 'Fare il bucato',
             done: false
+        },
+        {
+          text: 'Pulire la casa',
+          done: false
+        },
+        {
+          text: 'Leggere un libro',
+          done: true
+        },
+        {
+          text: 'Fare una passeggiata',
+          done: false
         }
       ]
     };

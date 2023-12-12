@@ -28,8 +28,8 @@
             <div class="task-to-do"  v-if="todos.length > 0">
                 <ul>
                     <!-- itera nell'array ed estrapola tutti gli attributi e valori e applica la class done se il valore dell'attributo done é true-->
-                    <li v-for="(task, i) in todos" :key="i" :class="{ done: task.done }">
-                        {{ task.text }}
+                    <li v-for="(task, i) in todos" :key="i">
+                    <span :class="{ done: task.done }">{{ task.text }}</span> 
                         <i class="fa-solid fa-xmark" @click="remove(i)"></i>
                     </li>
                 </ul>
