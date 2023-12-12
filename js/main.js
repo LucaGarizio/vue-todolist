@@ -3,6 +3,7 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
+      newTask: "",
       todos: [
         {
             text: 'Fare i compiti',
@@ -17,9 +18,17 @@ createApp({
             done: false
         }
       ]
-    }
+    };
   },
   methods: {
-    
+    addTask(){
+      this.todos.unshift({
+        text: this.newTask,
+        done: false
+    })
+    },
+    remove(i) {
+      this.todos.splice(i, 1);
+    }
   }
 }).mount('#app')
