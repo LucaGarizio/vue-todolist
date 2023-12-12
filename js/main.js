@@ -50,7 +50,7 @@ createApp({
     // dopo 3 secondi riporta il valore a falso
     setTimeout(() =>{
       this.error = false;
-    },3000);
+    },4000);
   }
     },
     remove(i) {
