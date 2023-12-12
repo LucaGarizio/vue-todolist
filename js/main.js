@@ -46,7 +46,11 @@ createApp({
       this.newTask = ""
     } else {
     // altrimenti setta la variabile errore su vero
-    this.error = true
+    this.error = true;
+    // dopo 3 secondi riporta il valore a falso
+    setTimeout(() =>{
+      this.error = false;
+    },3000);
   }
     },
     remove(i) {
