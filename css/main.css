@@ -82,6 +82,10 @@ li{
     justify-content: space-between;
 }
 
+span:hover{
+    cursor: pointer;
+}
+
 h2{
     font-size: 60px;
     color: cornflowerblue;
