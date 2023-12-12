@@ -37,6 +37,11 @@ input{
     font-size: 30px;
     border-radius: 20px;
     padding: 5px 5px 5px 20px;
+    border: none;
+}
+
+input::placeholder{
+    opacity: .7;
 }
 
 button{
@@ -44,6 +49,7 @@ button{
     padding: 5px;
     border-radius: 20px;
     width: 10%;
+    border: none;
 }
 
 .show-message{

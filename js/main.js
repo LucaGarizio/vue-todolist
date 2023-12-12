@@ -51,6 +51,9 @@ createApp({
     },
     remove(i) {
       this.todos.splice(i, 1);
-    }
+    },
+    reverse(i){
+        this.todos[i].done = !this.todos[i].done;
+      }
   }
 }).mount('#app')
