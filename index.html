@@ -21,6 +21,9 @@
                 <input type="text" placeholder="Nuova task" v-model="newTask" @keyup.enter="addTask">
                 <button @click="addTask">Crea</button>
             </div>
+            <div class="show-message" v-if="error">
+                <h3>scrivi almeno 5 parole</h3>
+            </div>
 
             <div class="task-to-do"  v-if="todos.length > 0">
                 <ul>
