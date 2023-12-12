@@ -12,11 +12,9 @@
     
     <div id="app">
         <div class="container">
-
             <div class="logo">
                 <img src="img/boolean-logo.png" alt="">
             </div>
-
             <div class="new-task">
                 <input type="text" placeholder="Nuova task" v-model="newTask" @keyup.enter="addTask">
                 <button @click="addTask">Crea</button>
@@ -24,12 +22,11 @@
             <div class="show-message" v-if="error">
                 <h3>scrivi almeno 5 lettere</h3>
             </div>
-
             <div class="task-to-do" v-if="todos.length > 0">
                 <ul>
                     <!-- itera nell'array ed estrapola tutti gli attributi e valori e applica la class done se il valore dell'attributo done é true-->
                     <li v-for="(task, i) in todos" :key="i" @click="reverse(i)">
-                        <span :class="{ done: task.done }">{{ task.text }}</span> 
+                        <span :class="{ checked: task.done }">{{task.text}}</span> 
                         <i class="fa-solid fa-xmark" @click="remove(i)"></i>
                     </li>
                 </ul>

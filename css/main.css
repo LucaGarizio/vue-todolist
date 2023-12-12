@@ -63,7 +63,7 @@ h3 {
     animation: fade-in 2s ease-in-out;
 }
 
-@keyframes fade-in-out {
+@keyframes fade-in {
     0% {
         opacity: 0;
     }
@@ -80,7 +80,6 @@ h3 {
         opacity: 1;
     }
 }
-
 
 .task-to-do {
     border: 1px solid black;
@@ -106,7 +105,7 @@ span:hover {
     cursor: pointer;
 }
 
-.done {
+.checked {
     text-decoration: line-through;
 }
 
