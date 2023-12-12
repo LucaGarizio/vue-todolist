@@ -37,14 +37,14 @@ createApp({
     addTask(){
       // se la nuova task ha almeno 5 caratteri
       if(this.newTask.length >= 5){
-        // allora crea e carica il nuovo oggetto nell'array con valore dall'attributo done impostato su falso
+      // crea e carica il nuovo oggetto nell'array con valore della proprietà done impostato su falso
       this.todos.unshift({
-        text: this.newTask,
-        done: false,
-    }),
-    this.error = false;
-    this.newTask = ""
-  } else {
+      text: this.newTask,
+      done: false,
+      }),
+      this.error = false;
+      this.newTask = ""
+    } else {
     // altrimenti setta la variabile errore su vero
     this.error = true
   }

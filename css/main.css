@@ -1,37 +1,37 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: #333;
+body {
+    background-color: #011e49;
     font-size: 20px;
 }
 
-.container{
+.container {
     width: 70%;
     margin: 0 auto;
 }
 
-.logo{
+.logo {
     display: flex;
     justify-content: center;
     margin: 20px 0 50px;
 }
 
-.logo img{
+.logo img {
     text-align: center;
+    width: 60%;
 }
 
-.new-task{
+.new-task {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-    
 }
 
-input{
+input {
     margin-right: 10px;
     width: 50%;
     font-size: 30px;
@@ -40,11 +40,11 @@ input{
     border: none;
 }
 
-input::placeholder{
-    opacity: .7;
+input::placeholder {
+    opacity: 0.7;
 }
 
-button{
+button {
     font-size: 30px;
     padding: 5px;
     border-radius: 20px;
@@ -52,17 +52,17 @@ button{
     border: none;
 }
 
-.show-message{
+.show-message {
     text-align: center;
     margin-bottom: 30px;
     color: white;
 }
 
-h3{
-    text-transform:uppercase
+h3 {
+    text-transform: uppercase;
 }
 
-.task-to-do{
+.task-to-do {
     border: 1px solid black;
     width: 70%;
     margin: 0 auto;
@@ -70,11 +70,11 @@ h3{
     border-radius: 5px;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-li{
+li {
     min-height: 20px;
     border-bottom: 3px solid #333;
     margin: 20px 30px;
@@ -82,16 +82,31 @@ li{
     justify-content: space-between;
 }
 
-span:hover{
+span:hover {
     cursor: pointer;
 }
 
-h2{
+  .done {
+    text-decoration: line-through;
+}
+
+h2 {
     font-size: 60px;
     color: cornflowerblue;
     text-align: center;
+    opacity: 0;
+    animation: slide-in 1s ease-in-out forwards;
 }
 
-.done{
-    text-decoration: line-through;
+@keyframes slide-in {
+    from {
+        opacity: 0.1;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
+
+  
